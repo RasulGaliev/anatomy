@@ -92,7 +92,7 @@ function renderHome() {
         (g) => `
       <div class="section-head">
         <h2>${g.name}</h2>
-        <p>${g.count} терминов · выберите тему — и сразу учите карточки</p>
+        <p>${g.count} терминов</p>
       </div>
       <div class="cat-grid">
         ${g.items
