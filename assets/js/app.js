@@ -5,7 +5,7 @@ const tabs = document.querySelectorAll(".tab");
 
 // ---- Состояние ----
 const state = {
-  view: "home",       // home | cards | quiz | list
+  view: "home",       // home | cards | quiz | write | list
   cat: "all",         // ключ раздела или "all"
   dir: "ru-la",       // ru-la | la-ru
 };
@@ -16,6 +16,22 @@ const countByCat = CATEGORIES.map((c) => ({
   ...c,
   count: ANATOMY_WORDS.filter((w) => w.cat === c.key).length,
 }));
+
+// разделы, сгруппированные по полю group (для главной страницы)
+function groupedCategories() {
+  const groups = [];
+  countByCat.forEach((c) => {
+    const name = c.group || "Разделы";
+    let g = groups.find((x) => x.name === name);
+    if (!g) {
+      g = { name, items: [], count: 0 };
+      groups.push(g);
+    }
+    g.items.push(c);
+    g.count += c.count;
+  });
+  return groups;
+}
 
 // ---- Утилиты ----
 const shuffle = (a) => {
@@ -40,6 +56,7 @@ function render() {
   if (state.view === "home") renderHome();
   else if (state.view === "cards") renderCards();
   else if (state.view === "quiz") renderQuiz();
+  else if (state.view === "write") renderWrite();
   else if (state.view === "list") renderList();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -70,24 +87,29 @@ function renderHome() {
       </div>
     </section>
 
-    <div class="section-head">
-      <h2>Разделы анатомии</h2>
-      <p>Выберите систему — и сразу учите карточки по ней</p>
-    </div>
-    <div class="cat-grid">
-      ${countByCat
-        .map(
-          (c) => `
-        <button class="cat-card" data-cat="${c.key}">
-          <span class="cat-emoji c-${c.key}">${c.icon}</span>
-          <span>
-            <b>${c.title}</b><br>
-            <small>${c.count} терминов</small>
-          </span>
-        </button>`
-        )
-        .join("")}
-    </div>`;
+    ${groupedCategories()
+      .map(
+        (g) => `
+      <div class="section-head">
+        <h2>${g.name}</h2>
+        <p>${g.count} терминов · выберите тему — и сразу учите карточки</p>
+      </div>
+      <div class="cat-grid">
+        ${g.items
+          .map(
+            (c) => `
+          <button class="cat-card" data-cat="${c.key}">
+            <span class="cat-emoji c-${c.key}">${c.icon}</span>
+            <span>
+              <b>${c.title}</b><br>
+              <small>${c.count} терминов</small>
+            </span>
+          </button>`
+          )
+          .join("")}
+      </div>`
+      )
+      .join("")}`;
 
   app.querySelectorAll(".cat-card").forEach((el) =>
     el.addEventListener("click", () => {
@@ -300,6 +322,147 @@ function drawQuizResult() {
   document.getElementById("quizAgain").addEventListener("click", renderQuiz);
 }
 
+// ---- Написание (ввод термина) ----
+let writeOrder = [];
+let writePos = 0;
+let writeResults = [];
+let writePrev = null;
+
+// посимвольное сравнение ответа с эталоном
+function colorCompare(user, correct) {
+  let html = "";
+  const len = Math.max(user.length, correct.length);
+  for (let i = 0; i < len; i++) {
+    const u = user[i] || "";
+    const c = correct[i] || "";
+    if (u && u.toLowerCase() === c.toLowerCase())
+      html += `<span class="char-ok">${esc(u)}</span>`;
+    else html += `<span class="char-bad">${esc(u || "·")}</span>`;
+  }
+  return html || "<span class=\"char-bad\">(пусто)</span>";
+}
+
+function renderWrite() {
+  const pool = wordsForCat(state.cat);
+  app.innerHTML = controlsHTML() + `<div id="writeArea"></div>`;
+  bindControls(renderWrite);
+
+  if (!pool.length) {
+    document.getElementById("writeArea").innerHTML =
+      `<div class="row-empty">Нет терминов в этом разделе</div>`;
+    return;
+  }
+  writeOrder = shuffle(pool);
+  writePos = 0;
+  writeResults = [];
+  writePrev = null;
+  drawWrite();
+}
+
+function drawWrite() {
+  const area = document.getElementById("writeArea");
+  if (writePos >= writeOrder.length) return drawWriteResult();
+
+  const w = writeOrder[writePos];
+  const f = frontBack(w);
+  const total = writeOrder.length;
+
+  const prevHTML = writePrev
+    ? `<div class="write-prev ${writePrev.ok ? "ok" : "bad"}">
+         <div class="wp-line"><b>Было:</b> ${esc(writePrev.front)}</div>
+         <div class="wp-line"><b>Ваш ответ:</b> ${colorCompare(writePrev.user, writePrev.answer)}</div>
+         <div class="wp-line"><b>Верно:</b> <span class="char-ok">${esc(writePrev.answer)}</span></div>
+       </div>`
+    : "";
+
+  area.innerHTML = `
+    <div class="write-wrap">
+      <div class="quiz-top">
+        <span>${catTitle(state.cat)}</span>
+        <span>Вопрос ${writePos + 1} / ${total} · Верно: ${writeResults.filter((r) => r.ok).length}</span>
+      </div>
+      <div class="quiz-bar"><i style="width:${(writePos / total) * 100}%"></i></div>
+      <div class="quiz-question">
+        <div class="q-lang">${f.frontLang} — напишите перевод на ${f.backLang}</div>
+        <div class="q-term">${esc(f.front)}</div>
+      </div>
+      <input class="write-input" id="writeInput" type="text"
+             placeholder="Введите термин…" autocomplete="off" autocapitalize="off" spellcheck="false" />
+      <div class="write-actions">
+        <button class="btn btn-primary" id="writeSubmit">Ответить</button>
+        <button class="btn btn-ghost" data-go="home">Выйти</button>
+      </div>
+      ${prevHTML}
+    </div>`;
+
+  const input = document.getElementById("writeInput");
+  input.focus();
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") submitWrite();
+  });
+  document.getElementById("writeSubmit").addEventListener("click", submitWrite);
+}
+
+function submitWrite() {
+  const w = writeOrder[writePos];
+  const f = frontBack(w);
+  const user = document.getElementById("writeInput").value.trim();
+  const ok = user.toLowerCase() === f.back.toLowerCase();
+
+  writePrev = { front: f.front, answer: f.back, user, ok };
+  writeResults.push({ word: w, front: f.front, answer: f.back, user, ok });
+  writePos++;
+  drawWrite();
+}
+
+function drawWriteResult() {
+  const total = writeResults.length;
+  const correct = writeResults.filter((r) => r.ok).length;
+  const pct = Math.round((correct / total) * 100);
+  const msg =
+    pct === 100 ? "Идеально! 🎉" : pct >= 70 ? "Отличный результат 👍" : pct >= 40 ? "Неплохо, но повторите 📖" : "Стоит потренироваться 💪";
+
+  const rows = writeResults
+    .map(
+      (r) => `
+      <div class="write-row ${r.ok ? "ok" : "bad"}">
+        <span class="wr-mark">${r.ok ? "✓" : "✘"}</span>
+        <div>
+          <div class="wr-front">${esc(r.front)}</div>
+          <div class="wr-answer"><b>Верно:</b> ${esc(r.answer)}</div>
+          ${r.ok ? "" : `<div class="wr-user">Ваш ответ: ${colorCompare(r.user, r.answer)}</div>`}
+        </div>
+      </div>`
+    )
+    .join("");
+
+  const wrong = writeResults.filter((r) => !r.ok).length;
+  document.getElementById("writeArea").innerHTML = `
+    <div class="write-wrap">
+      <div class="result">
+        <div class="big">${correct} / ${total}</div>
+        <p>${msg} · ${pct}% правильных</p>
+        <div class="hero-cta" style="justify-content:center;margin-top:18px">
+          ${wrong ? `<button class="btn btn-primary" id="writeRepeat">Повторить ошибки (${wrong})</button>` : ""}
+          <button class="btn ${wrong ? "btn-ghost" : "btn-primary"}" id="writeAgain">Ещё раз</button>
+          <button class="btn btn-ghost" data-go="home">На главную</button>
+        </div>
+      </div>
+      <div class="write-list">${rows}</div>
+    </div>`;
+
+  document.getElementById("writeAgain").addEventListener("click", renderWrite);
+  if (wrong) {
+    document.getElementById("writeRepeat").addEventListener("click", () => {
+      writeOrder = shuffle(writeResults.filter((r) => !r.ok).map((r) => r.word));
+      writePos = 0;
+      writeResults = [];
+      writePrev = null;
+      drawWrite();
+    });
+  }
+}
+
 // ---- Список / поиск ----
 let listQuery = "";
 
@@ -369,11 +532,28 @@ function drawTable() {
 // ====================================================================
 //  Навигация
 // ====================================================================
+const burger = document.getElementById("burger");
+const tabsNav = document.getElementById("tabs");
+
+function setMenu(open) {
+  tabsNav.classList.toggle("open", open);
+  burger.classList.toggle("active", open);
+  burger.setAttribute("aria-expanded", String(open));
+}
+
+burger.addEventListener("click", () => setMenu(!tabsNav.classList.contains("open")));
+
 document.addEventListener("click", (e) => {
   const go = e.target.closest("[data-go]");
   if (go) {
     state.view = go.dataset.go;
+    setMenu(false); // закрыть мобильное меню при переходе
     render();
+    return;
+  }
+  // клик вне меню и вне бургера — закрываем
+  if (tabsNav.classList.contains("open") && !e.target.closest("#tabs, #burger")) {
+    setMenu(false);
   }
 });
 
