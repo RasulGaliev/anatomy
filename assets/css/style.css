@@ -258,12 +258,12 @@ main {
 .c-heart { background: var(--pink); }
 .c-arteries { background: var(--peach); }
 .c-veins { background: var(--blue); }
-.c-neuro_forebrain { background: var(--lav); }
-.c-neuro_midbrain { background: var(--blue); }
-.c-neuro_hindbrain { background: var(--mint); }
-.c-neuro_pathways { background: var(--peach); }
-.c-neuro_nerves { background: var(--yellow); }
-.c-neuro_senses { background: var(--pink); }
+.c-neuro_l01, .c-neuro_l02, .c-neuro_l03 { background: var(--lav); }
+.c-neuro_l04, .c-neuro_l07 { background: var(--blue); }
+.c-neuro_l05, .c-neuro_l06, .c-neuro_l08 { background: var(--mint); }
+.c-neuro_l09, .c-neuro_l10 { background: var(--peach); }
+.c-neuro_l12, .c-neuro_l13, .c-neuro_l14 { background: var(--yellow); }
+.c-neuro_l15, .c-neuro_l16, .c-neuro_l17, .c-neuro_l18 { background: var(--pink); }
 
 /* ---------- Панель управления ---------- */
 .controls {

@@ -1,20 +1,30 @@
 // Источник данных по нейроанатомии (рабочая тетрадь, 18 занятий).
-// Термины сгруппированы в 6 крупных тем. Латынь — Terminologia Anatomica
-// (составлена вручную, требует сверки). Используется src/build.js.
+// Каждое занятие — отдельная тема, соответствует разбивке из рабочей тетради.
+// Латынь — Terminologia Anatomica (составлена вручную, требует сверки). Используется src/build.js.
 
 const neuroCategories = [
-  { key: "neuro_forebrain", title: "Большой мозг и ядра",      icon: "🧠" },
-  { key: "neuro_midbrain",  title: "Промежуточный и средний мозг", icon: "💠" },
-  { key: "neuro_hindbrain", title: "Задний и продолговатый мозг",  icon: "🌀" },
-  { key: "neuro_pathways",  title: "Проводящие пути",          icon: "🔀" },
-  { key: "neuro_nerves",    title: "Черепные нервы",           icon: "⚡" },
-  { key: "neuro_senses",    title: "Органы чувств и покров",   icon: "👁️" },
+  { key: "neuro_l01", title: "Отделы головного мозга. Топография корешков ЧМН", icon: "🧠" },
+  { key: "neuro_l02", title: "Полушария большого мозга. Плащ. Обонятельный мозг", icon: "🧠" },
+  { key: "neuro_l03", title: "Базальные ядра. Боковой желудочек", icon: "🧠" },
+  { key: "neuro_l04", title: "Промежуточный мозг. Средний мозг", icon: "💠" },
+  { key: "neuro_l05", title: "Задний мозг", icon: "🌀" },
+  { key: "neuro_l06", title: "Продолговатый мозг", icon: "🌀" },
+  { key: "neuro_l07", title: "Вентрикулярная система мозга", icon: "💠" },
+  { key: "neuro_l08", title: "Ромбовидная ямка", icon: "🌀" },
+  { key: "neuro_l09", title: "Проводящие пути головного и спинного мозга (1)", icon: "🔀" },
+  { key: "neuro_l10", title: "Проводящие пути головного и спинного мозга (2)", icon: "🔀" },
+  { key: "neuro_l12", title: "I–IV пары ЧМН", icon: "⚡" },
+  { key: "neuro_l13", title: "V–VII пары ЧМН", icon: "⚡" },
+  { key: "neuro_l14", title: "VIII–XII пары ЧМН", icon: "⚡" },
+  { key: "neuro_l15", title: "Орган зрения", icon: "👁️" },
+  { key: "neuro_l16", title: "Орган слуха и равновесия", icon: "👁️" },
+  { key: "neuro_l17", title: "Функциональная анатомия органов вкуса и обоняния", icon: "👁️" },
+  { key: "neuro_l18", title: "Общий покров", icon: "👁️" },
 ];
 
 const neuroTerms = {
-  // ================= Тема 1: Большой мозг и базальные ядра (занятия 1, 2, 3) =================
-  neuro_forebrain: [
-    // Занятие 1 — Отделы головного мозга. Корешки ЧМН на основании
+  // Занятие 1 — Отделы головного мозга. Корешки ЧМН на основании
+  neuro_l01: [
     { ru: "Продольная щель большого мозга", la: "fissura longitudinalis cerebri" },
     { ru: "Поперечная щель большого мозга", la: "fissura transversa cerebri" },
     { ru: "Обонятельная луковица", la: "bulbus olfactorius" },
@@ -55,7 +65,10 @@ const neuroTerms = {
     { ru: "Теменная доля полушария", la: "lobus parietalis hemispherii cerebri" },
     { ru: "Затылочная доля полушария", la: "lobus occipitalis hemispherii cerebri" },
     { ru: "Островковая доля полушария", la: "lobus insularis hemispherii cerebri" },
-    // Занятие 2 — Полушария большого мозга. Плащ. Обонятельный мозг
+  ],
+
+  // Занятие 2 — Полушария большого мозга. Плащ. Обонятельный мозг
+  neuro_l02: [
     { ru: "Лобный полюс полушарий мозга", la: "polus frontalis hemispherii cerebri" },
     { ru: "Затылочный полюс полушарий мозга", la: "polus occipitalis hemispherii cerebri" },
     { ru: "Височный полюс полушарий мозга", la: "polus temporalis hemispherii cerebri" },
@@ -96,7 +109,10 @@ const neuroTerms = {
     { ru: "Латеральная затылочно-височная извилина", la: "gyrus occipitotemporalis lateralis" },
     { ru: "Перешеек поясной извилины", la: "isthmus gyri cinguli" },
     { ru: "Постцентральная извилина", la: "gyrus postcentralis" },
-    // Занятие 3 — Базальные ядра. Боковой желудочек
+  ],
+
+  // Занятие 3 — Базальные ядра. Боковой желудочек
+  neuro_l03: [
     { ru: "Мозолистое тело", la: "corpus callosum" },
     { ru: "Валик мозолистого тела", la: "splenium corporis callosi" },
     { ru: "Ствол мозолистого тела", la: "truncus corporis callosi" },
@@ -139,9 +155,8 @@ const neuroTerms = {
     { ru: "Бледный шар", la: "globus pallidus" },
   ],
 
-  // ================= Тема 2: Промежуточный и средний мозг, желудочки (занятия 4, 7) =================
-  neuro_midbrain: [
-    // Занятие 4 — Промежуточный мозг. Средний мозг
+  // Занятие 4 — Промежуточный мозг. Средний мозг
+  neuro_l04: [
     { ru: "Крыша среднего мозга", la: "tectum mesencephali" },
     { ru: "Верхние холмики", la: "colliculi superiores" },
     { ru: "Нижние холмики", la: "colliculi inferiores" },
@@ -177,30 +192,10 @@ const neuroTerms = {
     { ru: "Бугорок турецкого седла", la: "tuberculum sellae" },
     { ru: "Гипофизарная ямка", la: "fossa hypophysialis" },
     { ru: "Зрительный канал", la: "canalis opticus" },
-    // Занятие 7 — Вентрикулярная система мозга
-    { ru: "Первый желудочек", la: "ventriculus primus" },
-    { ru: "Второй желудочек", la: "ventriculus secundus" },
-    { ru: "Третий желудочек", la: "ventriculus tertius" },
-    { ru: "Передний рог бокового желудочка", la: "cornu anterius ventriculi lateralis" },
-    { ru: "Нижний рог бокового желудочка", la: "cornu inferius ventriculi lateralis" },
-    { ru: "Задний рог бокового желудочка", la: "cornu posterius ventriculi lateralis" },
-    { ru: "Центральная часть бокового желудочка", la: "pars centralis ventriculi lateralis" },
-    { ru: "Головка хвостатого ядра", la: "caput nuclei caudati" },
-    { ru: "Тело хвостатого ядра", la: "corpus nuclei caudati" },
-    { ru: "Прозрачная перегородка", la: "septum pellucidum" },
-    { ru: "Тело свода", la: "corpus fornicis" },
-    { ru: "Столбы свода", la: "columnae fornicis" },
-    { ru: "Гиппокамп", la: "hippocampus" },
-    { ru: "Коллатеральное возвышение", la: "eminentia collateralis" },
-    { ru: "Коллатеральный треугольник", la: "trigonum collaterale" },
-    { ru: "Птичья шпора", la: "calcar avis" },
-    { ru: "Полость прозрачных перегородок", la: "cavum septi pellucidi" },
-    { ru: "Сосудистое сплетение бокового желудочка", la: "plexus choroideus ventriculi lateralis" },
   ],
 
-  // ================= Тема 3: Задний и продолговатый мозг, ромбовидная ямка (занятия 5, 6, 8) =================
-  neuro_hindbrain: [
-    // Занятие 5 — Задний мозг
+  // Занятие 5 — Задний мозг
+  neuro_l05: [
     { ru: "Вентральная поверхность моста", la: "facies ventralis pontis" },
     { ru: "Средняя мозжечковая ножка", la: "pedunculus cerebellaris medius" },
     { ru: "Нижняя мозжечковая ножка", la: "pedunculus cerebellaris inferior" },
@@ -231,7 +226,10 @@ const neuroTerms = {
     { ru: "Горизонтальная щель мозжечка", la: "fissura horizontalis cerebelli" },
     { ru: "Скат затылочной кости", la: "clivus" },
     { ru: "Задняя черепная ямка", la: "fossa cranii posterior" },
-    // Занятие 6 — Продолговатый мозг
+  ],
+
+  // Занятие 6 — Продолговатый мозг
+  neuro_l06: [
     { ru: "Передняя срединная щель", la: "fissura mediana anterior" },
     { ru: "Задняя срединная борозда", la: "sulcus medianus posterior" },
     { ru: "Переднелатеральная борозда", la: "sulcus anterolateralis" },
@@ -256,7 +254,32 @@ const neuroTerms = {
     { ru: "Нижний мозговой парус", la: "velum medullare inferius" },
     { ru: "Нижние мозжечковые ножки", la: "pedunculi cerebellares inferiores" },
     { ru: "Средние мозжечковые ножки", la: "pedunculi cerebellares medii" },
-    // Занятие 8 — Ромбовидная ямка
+  ],
+
+  // Занятие 7 — Вентрикулярная система мозга
+  neuro_l07: [
+    { ru: "Первый желудочек", la: "ventriculus primus" },
+    { ru: "Второй желудочек", la: "ventriculus secundus" },
+    { ru: "Третий желудочек", la: "ventriculus tertius" },
+    { ru: "Передний рог бокового желудочка", la: "cornu anterius ventriculi lateralis" },
+    { ru: "Нижний рог бокового желудочка", la: "cornu inferius ventriculi lateralis" },
+    { ru: "Задний рог бокового желудочка", la: "cornu posterius ventriculi lateralis" },
+    { ru: "Центральная часть бокового желудочка", la: "pars centralis ventriculi lateralis" },
+    { ru: "Головка хвостатого ядра", la: "caput nuclei caudati" },
+    { ru: "Тело хвостатого ядра", la: "corpus nuclei caudati" },
+    { ru: "Прозрачная перегородка", la: "septum pellucidum" },
+    { ru: "Тело свода", la: "corpus fornicis" },
+    { ru: "Столбы свода", la: "columnae fornicis" },
+    { ru: "Гиппокамп", la: "hippocampus" },
+    { ru: "Коллатеральное возвышение", la: "eminentia collateralis" },
+    { ru: "Коллатеральный треугольник", la: "trigonum collaterale" },
+    { ru: "Птичья шпора", la: "calcar avis" },
+    { ru: "Полость прозрачных перегородок", la: "cavum septi pellucidi" },
+    { ru: "Сосудистое сплетение бокового желудочка", la: "plexus choroideus ventriculi lateralis" },
+  ],
+
+  // Занятие 8 — Ромбовидная ямка
+  neuro_l08: [
     { ru: "Срединная борозда ромбовидной ямки", la: "sulcus medianus fossae rhomboideae" },
     { ru: "Лицевой бугорок", la: "colliculus facialis" },
     { ru: "Вестибулярное поле", la: "area vestibularis" },
@@ -289,9 +312,8 @@ const neuroTerms = {
     { ru: "Ядро подъязычного нерва", la: "nucleus nervi hypoglossi" },
   ],
 
-  // ================= Тема 4: Проводящие пути (занятия 9, 10) =================
-  neuro_pathways: [
-    // Занятие 9 — Проводящие пути (1)
+  // Занятие 9 — Проводящие пути (1)
+  neuro_l09: [
     { ru: "Постцентральная извилина", la: "gyrus postcentralis" },
     { ru: "Верхняя теменная долька", la: "lobulus parietalis superior" },
     { ru: "Нижняя теменная долька", la: "lobulus parietalis inferior" },
@@ -322,7 +344,10 @@ const neuroTerms = {
     { ru: "Передний спинно-таламический путь", la: "tractus spinothalamicus anterior" },
     { ru: "Передний спиномозжечковый путь", la: "tractus spinocerebellaris anterior" },
     { ru: "Задний спиномозжечковый путь", la: "tractus spinocerebellaris posterior" },
-    // Занятие 10 — Проводящие пути (2)
+  ],
+
+  // Занятие 10 — Проводящие пути (2)
+  neuro_l10: [
     { ru: "Предцентральная извилина", la: "gyrus precentralis" },
     { ru: "Средний мозг", la: "mesencephalon" },
     { ru: "Верхние холмики", la: "colliculi superiores" },
@@ -347,9 +372,8 @@ const neuroTerms = {
     { ru: "Преддверно-спинномозговой путь", la: "tractus vestibulospinalis" },
   ],
 
-  // ================= Тема 5: Черепные нервы (занятия 12, 13, 14) =================
-  neuro_nerves: [
-    // Занятие 12 — I–IV пары ЧМН
+  // Занятие 12 — I–IV пары ЧМН
+  neuro_l12: [
     { ru: "Внутриглазная часть зрительного нерва", la: "pars intraocularis nervi optici" },
     { ru: "Внутриглазничная часть зрительного нерва", la: "pars orbitalis nervi optici" },
     { ru: "Канальцевая часть зрительного нерва", la: "pars intracanalicularis nervi optici" },
@@ -382,7 +406,10 @@ const neuroTerms = {
     { ru: "Верхняя прямая мышца глаза", la: "musculus rectus superior bulbi" },
     { ru: "Нижняя прямая мышца глаза", la: "musculus rectus inferior bulbi" },
     { ru: "Латеральная прямая мышца глаза", la: "musculus rectus lateralis bulbi" },
-    // Занятие 13 — V–VII пары ЧМН
+  ],
+
+  // Занятие 13 — V–VII пары ЧМН
+  neuro_l13: [
     { ru: "Тройничный нерв", la: "nervus trigeminus" },
     { ru: "Среднемозговое ядро тройничного нерва", la: "nucleus mesencephalicus nervi trigemini" },
     { ru: "Мостовое ядро тройничного нерва", la: "nucleus pontinus nervi trigemini" },
@@ -422,7 +449,10 @@ const neuroTerms = {
     { ru: "Краевая ветвь нижней челюсти", la: "ramus marginalis mandibulae" },
     { ru: "Шейная ветвь лицевого нерва", la: "ramus colli nervi facialis" },
     { ru: "Поверхностная шейная петля", la: "ansa cervicalis superficialis" },
-    // Занятие 14 — VIII–XII пары ЧМН
+  ],
+
+  // Занятие 14 — VIII–XII пары ЧМН
+  neuro_l14: [
     { ru: "Языкоглоточный нерв", la: "nervus glossopharyngeus" },
     { ru: "Блуждающий нерв", la: "nervus vagus" },
     { ru: "Двойное ядро", la: "nucleus ambiguus" },
@@ -448,9 +478,8 @@ const neuroTerms = {
     { ru: "Язычный треугольник", la: "trigonum linguale" },
   ],
 
-  // ================= Тема 6: Органы чувств и общий покров (занятия 15, 16, 17, 18) =================
-  neuro_senses: [
-    // Занятие 15 — Орган зрения
+  // Занятие 15 — Орган зрения
+  neuro_l15: [
     { ru: "Роговица", la: "cornea" },
     { ru: "Склера", la: "sclera" },
     { ru: "Собственная сосудистая оболочка", la: "choroidea" },
@@ -486,7 +515,10 @@ const neuroTerms = {
     { ru: "Зрачок", la: "pupilla" },
     { ru: "Передний полюс хрусталика", la: "polus anterior lentis" },
     { ru: "Задний полюс хрусталика", la: "polus posterior lentis" },
-    // Занятие 16 — Орган слуха и равновесия
+  ],
+
+  // Занятие 16 — Орган слуха и равновесия
+  neuro_l16: [
     { ru: "Ушная раковина", la: "auricula" },
     { ru: "Наружный слуховой проход", la: "meatus acusticus externus" },
     { ru: "Ладья", la: "scapha" },
@@ -527,7 +559,10 @@ const neuroTerms = {
     { ru: "Барабанная лестница", la: "scala tympani" },
     { ru: "Улитка", la: "cochlea" },
     { ru: "Преддверно-улитковый нерв", la: "nervus vestibulocochlearis" },
-    // Занятие 17 — Органы вкуса и обоняния
+  ],
+
+  // Занятие 17 — Органы вкуса и обоняния
+  neuro_l17: [
     { ru: "Язык", la: "lingua" },
     { ru: "Листовидные сосочки", la: "papillae foliatae" },
     { ru: "Нитевидные сосочки", la: "papillae filiformes" },
@@ -550,7 +585,10 @@ const neuroTerms = {
     { ru: "Сосцевидные тела", la: "corpora mamillaria" },
     { ru: "Обонятельный нерв", la: "nervus olfactorius" },
     { ru: "Ядро одиночного пути", la: "nucleus tractus solitarii" },
-    // Занятие 18 — Общий покров
+  ],
+
+  // Занятие 18 — Общий покров
+  neuro_l18: [
     { ru: "Кожа", la: "cutis" },
     { ru: "Волосы", la: "pili" },
     { ru: "Ноготь", la: "unguis" },
@@ -558,6 +596,7 @@ const neuroTerms = {
     { ru: "Сальная железа", la: "glandula sebacea" },
     { ru: "Потовая железа", la: "glandula sudorifera" },
   ],
+
 };
 
 module.exports = { neuroCategories, neuroTerms };
