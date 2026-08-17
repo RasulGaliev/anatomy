@@ -121,6 +121,8 @@ function renderHome() {
 }
 
 // ---- Общая панель управления (раздел + направление) ----
+// По умолчанию свёрнута в одну строку (не мешает карточкам/тесту),
+// разворачивается по клику, чтобы можно было сменить раздел.
 function controlsHTML() {
   const catChips = [{ key: "all", title: "Все" }, ...CATEGORIES]
     .map(
@@ -139,20 +141,36 @@ function controlsHTML() {
         `<button class="chip ${state.dir === k ? "active" : ""}" data-dir="${k}">${label}</button>`
     )
     .join("");
+  const curCat = state.cat === "all" ? "Все разделы" : `${catMap[state.cat].icon} ${catMap[state.cat].title}`;
+  const curDir = state.dir === "ru-la" ? "RU → LA" : "LA → RU";
   return `
-    <div class="controls">
-      <div class="control-group">
-        <span class="control-label">Раздел</span>
-        <div class="chips" id="catChips">${catChips}</div>
-      </div>
-      <div class="control-group">
-        <span class="control-label">Направление</span>
-        <div class="chips" id="dirChips">${dirChips}</div>
+    <div class="controls-bar">
+      <button class="controls-toggle" id="controlsToggle" type="button">
+        <span class="ct-current">${curCat} <span class="ct-sep">·</span> ${curDir}</span>
+        <span class="ct-action">Сменить раздел ▾</span>
+      </button>
+      <div class="controls" id="controlsPanel" hidden>
+        <div class="control-group">
+          <span class="control-label">Раздел</span>
+          <div class="chips" id="catChips">${catChips}</div>
+        </div>
+        <div class="control-group">
+          <span class="control-label">Направление</span>
+          <div class="chips" id="dirChips">${dirChips}</div>
+        </div>
       </div>
     </div>`;
 }
 
 function bindControls(onChange) {
+  const toggle = document.getElementById("controlsToggle");
+  const panel = document.getElementById("controlsPanel");
+  if (toggle && panel) {
+    toggle.addEventListener("click", () => {
+      panel.hidden = !panel.hidden;
+      toggle.classList.toggle("open", !panel.hidden);
+    });
+  }
   app.querySelectorAll("#catChips .chip").forEach((el) =>
     el.addEventListener("click", () => {
       state.cat = el.dataset.cat;
@@ -499,7 +517,7 @@ function controlsHTMLNoDir() {
     )
     .join("");
   return `
-    <div class="controls">
+    <div class="controls controls-standalone">
       <div class="control-group">
         <span class="control-label">Раздел</span>
         <div class="chips" id="catChips">${catChips}</div>

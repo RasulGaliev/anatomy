@@ -134,14 +134,19 @@ main {
 }
 
 .footer {
+  color: var(--ink-soft);
+  font-size: 13px;
+  border-top: 1px solid var(--line);
+}
+.footer-inner {
   display: flex;
   justify-content: space-between;
   gap: 12px;
   flex-wrap: wrap;
-  padding: 18px 28px;
-  color: var(--ink-soft);
-  font-size: 13px;
-  border-top: 1px solid var(--line);
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 18px 24px;
 }
 
 /* ---------- Hero ---------- */
@@ -266,6 +271,27 @@ main {
 .c-neuro_l15, .c-neuro_l16, .c-neuro_l17, .c-neuro_l18 { background: var(--pink); }
 
 /* ---------- Панель управления ---------- */
+.controls-bar { margin-bottom: 22px; }
+.controls-toggle {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-family: inherit;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.controls-toggle:hover { border-color: var(--blue); }
+.controls-toggle.open { border-radius: var(--radius-sm) var(--radius-sm) 0 0; border-bottom-color: transparent; }
+.ct-current { font-weight: 700; font-size: 14px; color: var(--ink); }
+.ct-sep { color: var(--ink-soft); }
+.ct-action { font-size: 12px; font-weight: 700; color: var(--ink-soft); white-space: nowrap; }
 .controls {
   display: flex;
   flex-wrap: wrap;
@@ -273,11 +299,13 @@ main {
   align-items: center;
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
+  border-top: none;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
   padding: 16px 20px;
   box-shadow: var(--shadow-sm);
-  margin-bottom: 22px;
 }
+.controls[hidden] { display: none; }
+.controls-standalone { border-top: 1px solid var(--line); border-radius: var(--radius-sm); margin-bottom: 22px; }
 .control-group { display: flex; flex-direction: column; gap: 8px; }
 .control-label { font-size: 12px; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.4px; }
 .chips { display: flex; gap: 8px; flex-wrap: wrap; }
