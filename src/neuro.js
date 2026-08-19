@@ -390,7 +390,7 @@ const neuroTerms = {
     { ru: "Парагиппокампальная извилина", la: "gyrus parahippocampalis" },
     { ru: "Сводчатая извилина", la: "gyrus fornicatus" },
     { ru: "Крючок", la: "uncus" },
-    { ru: "Решетчатые отверстия", la: "foramina cribrosa" },
+    { ru: "Решетчатые отверстия", la: "foramina cribrosa ossis ethmoidalis" },
     { ru: "Решетчатая пластинка решетчатой кости", la: "lamina cribrosa ossis ethmoidalis" },
     { ru: "Верхний носовой ход", la: "meatus nasi superior" },
     { ru: "Обонятельная область полости носа", la: "regio olfactoria cavitatis nasi" },
