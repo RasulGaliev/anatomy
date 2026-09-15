@@ -4862,7 +4862,7 @@
   {
     "id": 811,
     "ru": "Серый покров мозолистого тела",
-    "la": "indusium griseum",
+    "la": "indusium griseum corporis callosi",
     "cat": "neuro_l03"
   },
   {
@@ -4880,13 +4880,13 @@
   {
     "id": 814,
     "ru": "Тело свода мозга",
-    "la": "corpus fornicis",
+    "la": "corpus fornicis cerebri",
     "cat": "neuro_l03"
   },
   {
     "id": 815,
     "ru": "Столб свода мозга",
-    "la": "columna fornicis",
+    "la": "columna fornicis cerebri",
     "cat": "neuro_l03"
   },
   {
@@ -5006,7 +5006,7 @@
   {
     "id": 835,
     "ru": "Пальцы ног морского конька",
-    "la": "pes hippocampi",
+    "la": "digitationes hippocampi",
     "cat": "neuro_l03"
   },
   {
@@ -5323,7 +5323,7 @@
   },
   {
     "id": 888,
-    "ru": "Червь",
+    "ru": "Червь мозжечка",
     "la": "vermis cerebelli",
     "cat": "neuro_l05"
   },
@@ -5497,14 +5497,14 @@
   },
   {
     "id": 917,
-    "ru": "Пирамиды",
+    "ru": "Пирамиды продолговатого мозга",
     "la": "pyramides medullae oblongatae",
     "cat": "neuro_l06"
   },
   {
     "id": 918,
-    "ru": "Олива",
-    "la": "oliva",
+    "ru": "Олива продолговатого мозга",
+    "la": "oliva medullae oblongatae",
     "cat": "neuro_l06"
   },
   {
@@ -5522,13 +5522,13 @@
   {
     "id": 921,
     "ru": "Бугорок тонкого ядра",
-    "la": "tuberculum gracile",
+    "la": "tuberculum nuclei gracilis",
     "cat": "neuro_l06"
   },
   {
     "id": 922,
     "ru": "Бугорок клиновидного ядра",
-    "la": "tuberculum cuneatum",
+    "la": "tuberculum nuclei cuneati",
     "cat": "neuro_l06"
   },
   {
@@ -5623,1764 +5623,1776 @@
   },
   {
     "id": 938,
+    "ru": "Межжелудочковое отверстие",
+    "la": "foramen interventriculare",
+    "cat": "neuro_l07"
+  },
+  {
+    "id": 939,
+    "ru": "Водопровод среднего мозга",
+    "la": "aqueductus mesencephali",
+    "cat": "neuro_l07"
+  },
+  {
+    "id": 940,
     "ru": "Передний рог бокового желудочка",
     "la": "cornu anterius ventriculi lateralis",
     "cat": "neuro_l07"
   },
   {
-    "id": 939,
+    "id": 941,
     "ru": "Нижний рог бокового желудочка",
     "la": "cornu inferius ventriculi lateralis",
     "cat": "neuro_l07"
   },
   {
-    "id": 940,
+    "id": 942,
     "ru": "Задний рог бокового желудочка",
     "la": "cornu posterius ventriculi lateralis",
     "cat": "neuro_l07"
   },
   {
-    "id": 941,
+    "id": 943,
     "ru": "Центральная часть бокового желудочка",
     "la": "pars centralis ventriculi lateralis",
     "cat": "neuro_l07"
   },
   {
-    "id": 942,
+    "id": 944,
     "ru": "Головка хвостатого ядра",
     "la": "caput nuclei caudati",
     "cat": "neuro_l07"
   },
   {
-    "id": 943,
+    "id": 945,
     "ru": "Тело хвостатого ядра",
     "la": "corpus nuclei caudati",
     "cat": "neuro_l07"
   },
   {
-    "id": 944,
+    "id": 946,
     "ru": "Прозрачная перегородка",
     "la": "septum pellucidum",
     "cat": "neuro_l07"
   },
   {
-    "id": 945,
+    "id": 947,
     "ru": "Тело свода",
     "la": "corpus fornicis",
     "cat": "neuro_l07"
   },
   {
-    "id": 946,
+    "id": 948,
     "ru": "Столбы свода",
     "la": "columnae fornicis",
     "cat": "neuro_l07"
   },
   {
-    "id": 947,
+    "id": 949,
     "ru": "Гиппокамп",
     "la": "hippocampus",
     "cat": "neuro_l07"
   },
   {
-    "id": 948,
+    "id": 950,
     "ru": "Коллатеральное возвышение",
     "la": "eminentia collateralis",
     "cat": "neuro_l07"
   },
   {
-    "id": 949,
+    "id": 951,
     "ru": "Коллатеральный треугольник",
     "la": "trigonum collaterale",
     "cat": "neuro_l07"
   },
   {
-    "id": 950,
+    "id": 952,
     "ru": "Птичья шпора",
     "la": "calcar avis",
     "cat": "neuro_l07"
   },
   {
-    "id": 951,
+    "id": 953,
     "ru": "Полость прозрачных перегородок",
     "la": "cavum septi pellucidi",
     "cat": "neuro_l07"
   },
   {
-    "id": 952,
+    "id": 954,
     "ru": "Сосудистое сплетение бокового желудочка",
     "la": "plexus choroideus ventriculi lateralis",
     "cat": "neuro_l07"
   },
   {
-    "id": 953,
+    "id": 955,
     "ru": "Срединная борозда ромбовидной ямки",
     "la": "sulcus medianus fossae rhomboideae",
     "cat": "neuro_l08"
   },
   {
-    "id": 954,
+    "id": 956,
     "ru": "Лицевой бугорок",
     "la": "colliculus facialis",
     "cat": "neuro_l08"
   },
   {
-    "id": 955,
+    "id": 957,
     "ru": "Вестибулярное поле",
     "la": "area vestibularis",
     "cat": "neuro_l08"
   },
   {
-    "id": 956,
+    "id": 958,
     "ru": "Треугольник блуждающего нерва",
     "la": "trigonum nervi vagi",
     "cat": "neuro_l08"
   },
   {
-    "id": 957,
+    "id": 959,
     "ru": "Задвижка",
     "la": "obex",
     "cat": "neuro_l08"
   },
   {
-    "id": 958,
+    "id": 960,
     "ru": "Медиальное возвышение",
     "la": "eminentia medialis",
     "cat": "neuro_l08"
   },
   {
-    "id": 959,
+    "id": 961,
     "ru": "Треугольник подъязычного нерва",
     "la": "trigonum nervi hypoglossi",
     "cat": "neuro_l08"
   },
   {
-    "id": 960,
-    "ru": "Мозговые полоски",
+    "id": 962,
+    "ru": "Мозговые полоски IV желудочка",
     "la": "striae medullares ventriculi quarti",
     "cat": "neuro_l08"
   },
   {
-    "id": 961,
-    "ru": "Латеральные карманы",
+    "id": 963,
+    "ru": "Латеральные карманы IV желудочка",
     "la": "recessus laterales ventriculi quarti",
     "cat": "neuro_l08"
   },
   {
-    "id": 962,
+    "id": 964,
     "ru": "Пограничная борозда",
     "la": "sulcus limitans",
     "cat": "neuro_l08"
   },
   {
-    "id": 963,
+    "id": 965,
     "ru": "Краниальная ямка",
     "la": "fovea cranialis",
     "cat": "neuro_l08"
   },
   {
-    "id": 964,
+    "id": 966,
     "ru": "Каудальная ямка",
     "la": "fovea caudalis",
     "cat": "neuro_l08"
   },
   {
-    "id": 965,
+    "id": 967,
     "ru": "Голубоватое место",
     "la": "locus coeruleus",
     "cat": "neuro_l08"
   },
   {
-    "id": 966,
+    "id": 968,
     "ru": "Двигательное ядро тройничного нерва",
     "la": "nucleus motorius nervi trigemini",
     "cat": "neuro_l08"
   },
   {
-    "id": 967,
+    "id": 969,
     "ru": "Чувствительное ядро тройничного нерва",
     "la": "nucleus sensorius nervi trigemini",
     "cat": "neuro_l08"
   },
   {
-    "id": 968,
+    "id": 970,
     "ru": "Двигательное ядро отводящего нерва",
     "la": "nucleus motorius nervi abducentis",
     "cat": "neuro_l08"
   },
   {
-    "id": 969,
+    "id": 971,
     "ru": "Двигательное ядро лицевого нерва",
     "la": "nucleus motorius nervi facialis",
     "cat": "neuro_l08"
   },
   {
-    "id": 970,
+    "id": 972,
     "ru": "Ядро одиночного пути",
     "la": "nucleus tractus solitarii",
     "cat": "neuro_l08"
   },
   {
-    "id": 971,
+    "id": 973,
     "ru": "Верхнее слюноотделительное ядро",
     "la": "nucleus salivatorius superior",
     "cat": "neuro_l08"
   },
   {
-    "id": 972,
+    "id": 974,
     "ru": "Переднее улитковое ядро",
     "la": "nucleus cochlearis anterior",
     "cat": "neuro_l08"
   },
   {
-    "id": 973,
+    "id": 975,
     "ru": "Заднее улитковое ядро",
     "la": "nucleus cochlearis posterior",
     "cat": "neuro_l08"
   },
   {
-    "id": 974,
+    "id": 976,
     "ru": "Медиальное вестибулярное ядро",
     "la": "nucleus vestibularis medialis",
     "cat": "neuro_l08"
   },
   {
-    "id": 975,
+    "id": 977,
     "ru": "Латеральное вестибулярное ядро",
     "la": "nucleus vestibularis lateralis",
     "cat": "neuro_l08"
   },
   {
-    "id": 976,
+    "id": 978,
     "ru": "Верхнее вестибулярное ядро",
     "la": "nucleus vestibularis superior",
     "cat": "neuro_l08"
   },
   {
-    "id": 977,
+    "id": 979,
     "ru": "Нижнее вестибулярное ядро",
     "la": "nucleus vestibularis inferior",
     "cat": "neuro_l08"
   },
   {
-    "id": 978,
+    "id": 980,
     "ru": "Двойное ядро",
     "la": "nucleus ambiguus",
     "cat": "neuro_l08"
   },
   {
-    "id": 979,
+    "id": 981,
     "ru": "Нижнее слюноотделительное ядро",
     "la": "nucleus salivatorius inferior",
     "cat": "neuro_l08"
   },
   {
-    "id": 980,
+    "id": 982,
     "ru": "Заднее ядро блуждающего нерва",
     "la": "nucleus dorsalis nervi vagi",
     "cat": "neuro_l08"
   },
   {
-    "id": 981,
+    "id": 983,
     "ru": "Двигательное ядро добавочного нерва",
-    "la": "nucleus motorius nervi accessorii",
+    "la": "nucleus nervi accessorii",
     "cat": "neuro_l08"
   },
   {
-    "id": 982,
+    "id": 984,
     "ru": "Ядро подъязычного нерва",
     "la": "nucleus nervi hypoglossi",
     "cat": "neuro_l08"
   },
   {
-    "id": 983,
+    "id": 985,
     "ru": "Постцентральная извилина",
     "la": "gyrus postcentralis",
     "cat": "neuro_l09"
   },
   {
-    "id": 984,
+    "id": 986,
     "ru": "Верхняя теменная долька",
     "la": "lobulus parietalis superior",
     "cat": "neuro_l09"
   },
   {
-    "id": 985,
+    "id": 987,
     "ru": "Нижняя теменная долька",
     "la": "lobulus parietalis inferior",
     "cat": "neuro_l09"
   },
   {
-    "id": 986,
+    "id": 988,
     "ru": "Таламус",
     "la": "thalamus",
     "cat": "neuro_l09"
   },
   {
-    "id": 987,
+    "id": 989,
     "ru": "Мост",
     "la": "pons",
     "cat": "neuro_l09"
   },
   {
-    "id": 988,
+    "id": 990,
     "ru": "Верхние мозжечковые ножки",
     "la": "pedunculi cerebellares superiores",
     "cat": "neuro_l09"
   },
   {
-    "id": 989,
+    "id": 991,
     "ru": "Нижние мозжечковые ножки",
     "la": "pedunculi cerebellares inferiores",
     "cat": "neuro_l09"
   },
   {
-    "id": 990,
+    "id": 992,
     "ru": "Червь мозжечка",
     "la": "vermis cerebelli",
     "cat": "neuro_l09"
   },
   {
-    "id": 991,
+    "id": 993,
     "ru": "Боковой канатик спинного мозга",
     "la": "funiculus lateralis medullae spinalis",
     "cat": "neuro_l09"
   },
   {
-    "id": 992,
+    "id": 994,
     "ru": "Передний канатик спинного мозга",
     "la": "funiculus anterior medullae spinalis",
     "cat": "neuro_l09"
   },
   {
-    "id": 993,
+    "id": 995,
     "ru": "Задний канатик спинного мозга",
     "la": "funiculus posterior medullae spinalis",
     "cat": "neuro_l09"
   },
   {
-    "id": 994,
+    "id": 996,
     "ru": "Пучок Голля",
     "la": "fasciculus gracilis",
     "cat": "neuro_l09"
   },
   {
-    "id": 995,
+    "id": 997,
     "ru": "Пучок Бурдаха",
     "la": "fasciculus cuneatus",
     "cat": "neuro_l09"
   },
   {
-    "id": 996,
+    "id": 998,
     "ru": "Задний рог спинного мозга",
     "la": "cornu posterius medullae spinalis",
     "cat": "neuro_l09"
   },
   {
-    "id": 997,
+    "id": 999,
     "ru": "Передний рог спинного мозга",
     "la": "cornu anterius medullae spinalis",
     "cat": "neuro_l09"
   },
   {
-    "id": 998,
+    "id": 1000,
     "ru": "Боковой рог спинного мозга",
     "la": "cornu laterale medullae spinalis",
     "cat": "neuro_l09"
   },
   {
-    "id": 999,
-    "ru": "Задний корешок спинного мозга",
-    "la": "radix posterior nervi spinalis",
-    "cat": "neuro_l09"
-  },
-  {
-    "id": 1000,
-    "ru": "Грудное ядро спинного мозга",
-    "la": "nucleus thoracicus posterior",
-    "cat": "neuro_l09"
-  },
-  {
     "id": 1001,
+    "ru": "Задний корешок спинного мозга",
+    "la": "radix posterior medullae spinalis",
+    "cat": "neuro_l09"
+  },
+  {
+    "id": 1002,
+    "ru": "Грудное ядро спинного мозга",
+    "la": "nucleus thoracicus medullae spinalis",
+    "cat": "neuro_l09"
+  },
+  {
+    "id": 1003,
     "ru": "Спинномозговой ганглий",
     "la": "ganglion spinale",
     "cat": "neuro_l09"
   },
   {
-    "id": 1002,
+    "id": 1004,
     "ru": "Пирамида продолговатого мозга",
     "la": "pyramis medullae oblongatae",
     "cat": "neuro_l09"
   },
   {
-    "id": 1003,
+    "id": 1005,
     "ru": "Внутренняя капсула",
     "la": "capsula interna",
     "cat": "neuro_l09"
   },
   {
-    "id": 1004,
+    "id": 1006,
     "ru": "Передняя ножка внутренней капсулы",
     "la": "crus anterius capsulae internae",
     "cat": "neuro_l09"
   },
   {
-    "id": 1005,
+    "id": 1007,
     "ru": "Ромбовидная ямка",
     "la": "fossa rhomboidea",
     "cat": "neuro_l09"
   },
   {
-    "id": 1006,
+    "id": 1008,
     "ru": "Олива",
     "la": "oliva",
     "cat": "neuro_l09"
   },
   {
-    "id": 1007,
+    "id": 1009,
     "ru": "Продолговатый мозг",
     "la": "medulla oblongata",
     "cat": "neuro_l09"
   },
   {
-    "id": 1008,
+    "id": 1010,
     "ru": "Задняя ножка внутренней капсулы",
     "la": "crus posterius capsulae internae",
     "cat": "neuro_l09"
   },
   {
-    "id": 1009,
+    "id": 1011,
     "ru": "Латеральный спинно-таламический путь",
     "la": "tractus spinothalamicus lateralis",
     "cat": "neuro_l09"
   },
   {
-    "id": 1010,
+    "id": 1012,
     "ru": "Передний спинно-таламический путь",
     "la": "tractus spinothalamicus anterior",
     "cat": "neuro_l09"
   },
   {
-    "id": 1011,
+    "id": 1013,
     "ru": "Передний спиномозжечковый путь",
     "la": "tractus spinocerebellaris anterior",
     "cat": "neuro_l09"
   },
   {
-    "id": 1012,
+    "id": 1014,
     "ru": "Задний спиномозжечковый путь",
     "la": "tractus spinocerebellaris posterior",
     "cat": "neuro_l09"
   },
   {
-    "id": 1013,
+    "id": 1015,
     "ru": "Предцентральная извилина",
     "la": "gyrus precentralis",
     "cat": "neuro_l10"
   },
   {
-    "id": 1014,
+    "id": 1016,
     "ru": "Средний мозг",
     "la": "mesencephalon",
     "cat": "neuro_l10"
   },
   {
-    "id": 1015,
+    "id": 1017,
     "ru": "Верхние холмики",
     "la": "colliculi superiores",
     "cat": "neuro_l10"
   },
   {
-    "id": 1016,
+    "id": 1018,
     "ru": "Нижние холмики",
     "la": "colliculi inferiores",
     "cat": "neuro_l10"
   },
   {
-    "id": 1017,
+    "id": 1019,
     "ru": "Основание ножки мозга",
     "la": "basis pedunculi cerebri",
     "cat": "neuro_l10"
   },
   {
-    "id": 1018,
+    "id": 1020,
     "ru": "Красное ядро",
     "la": "nucleus ruber",
     "cat": "neuro_l10"
   },
   {
-    "id": 1019,
+    "id": 1021,
     "ru": "Покрышка среднего мозга",
     "la": "tegmentum mesencephali",
     "cat": "neuro_l10"
   },
   {
-    "id": 1020,
+    "id": 1022,
     "ru": "Ствол мозга",
     "la": "truncus encephali",
     "cat": "neuro_l10"
   },
   {
-    "id": 1021,
+    "id": 1023,
     "ru": "Латеральное вестибулярное ядро продолговатого мозга",
     "la": "nucleus vestibularis lateralis",
     "cat": "neuro_l10"
   },
   {
-    "id": 1022,
+    "id": 1024,
     "ru": "Нижнее вестибулярное ядро мозга",
     "la": "nucleus vestibularis inferior",
     "cat": "neuro_l10"
   },
   {
-    "id": 1023,
+    "id": 1025,
     "ru": "Перекрёст пирамид",
     "la": "decussatio pyramidum",
     "cat": "neuro_l10"
   },
   {
-    "id": 1024,
+    "id": 1026,
     "ru": "Колено внутренней капсулы",
     "la": "genu capsulae internae",
     "cat": "neuro_l10"
   },
   {
-    "id": 1025,
+    "id": 1027,
     "ru": "Двигательное ядро III пары ЧМН",
     "la": "nucleus nervi oculomotorii",
     "cat": "neuro_l10"
   },
   {
-    "id": 1026,
+    "id": 1028,
     "ru": "Полушария мозжечка",
     "la": "hemispheria cerebelli",
     "cat": "neuro_l10"
   },
   {
-    "id": 1027,
+    "id": 1029,
     "ru": "Средняя ножка мозжечка",
     "la": "pedunculus cerebellaris medius",
     "cat": "neuro_l10"
   },
   {
-    "id": 1028,
+    "id": 1030,
     "ru": "Корково-ядерный путь",
     "la": "tractus corticonuclearis",
     "cat": "neuro_l10"
   },
   {
-    "id": 1029,
+    "id": 1031,
     "ru": "Латеральный корково-спинномозговой путь",
     "la": "tractus corticospinalis lateralis",
     "cat": "neuro_l10"
   },
   {
-    "id": 1030,
+    "id": 1032,
     "ru": "Передний корково-спинномозговой путь",
     "la": "tractus corticospinalis anterior",
     "cat": "neuro_l10"
   },
   {
-    "id": 1031,
+    "id": 1033,
     "ru": "Красноядерно-спинномозговой путь",
     "la": "tractus rubrospinalis",
     "cat": "neuro_l10"
   },
   {
-    "id": 1032,
+    "id": 1034,
     "ru": "Тектоспинальный путь",
     "la": "tractus tectospinalis",
     "cat": "neuro_l10"
   },
   {
-    "id": 1033,
+    "id": 1035,
     "ru": "Ретикуло-спинномозговой путь",
     "la": "tractus reticulospinalis",
     "cat": "neuro_l10"
   },
   {
-    "id": 1034,
+    "id": 1036,
     "ru": "Преддверно-спинномозговой путь",
     "la": "tractus vestibulospinalis",
     "cat": "neuro_l10"
   },
   {
-    "id": 1035,
+    "id": 1037,
     "ru": "Внутриглазная часть зрительного нерва",
     "la": "pars intraocularis nervi optici",
     "cat": "neuro_l12"
   },
   {
-    "id": 1036,
+    "id": 1038,
     "ru": "Внутриглазничная часть зрительного нерва",
     "la": "pars orbitalis nervi optici",
     "cat": "neuro_l12"
   },
   {
-    "id": 1037,
+    "id": 1039,
     "ru": "Канальцевая часть зрительного нерва",
     "la": "pars intracanalicularis nervi optici",
     "cat": "neuro_l12"
   },
   {
-    "id": 1038,
+    "id": 1040,
     "ru": "Внутричерепная часть зрительного нерва",
     "la": "pars intracranialis nervi optici",
     "cat": "neuro_l12"
   },
   {
-    "id": 1039,
+    "id": 1041,
     "ru": "Зрительный тракт",
     "la": "tractus opticus",
     "cat": "neuro_l12"
   },
   {
-    "id": 1040,
+    "id": 1042,
     "ru": "Зрительный перекрест",
     "la": "chiasma opticum",
     "cat": "neuro_l12"
   },
   {
-    "id": 1041,
+    "id": 1043,
     "ru": "Зрительный канал",
     "la": "canalis opticus",
     "cat": "neuro_l12"
   },
   {
-    "id": 1042,
+    "id": 1044,
     "ru": "Латеральные коленчатые тела",
     "la": "corpora geniculata lateralia",
     "cat": "neuro_l12"
   },
   {
-    "id": 1043,
+    "id": 1045,
     "ru": "Шпорная борозда",
     "la": "sulcus calcarinus",
     "cat": "neuro_l12"
   },
   {
-    "id": 1044,
+    "id": 1046,
     "ru": "Обонятельный нерв",
     "la": "nervus olfactorius",
     "cat": "neuro_l12"
   },
   {
-    "id": 1045,
+    "id": 1047,
     "ru": "Обонятельный тракт",
     "la": "tractus olfactorius",
     "cat": "neuro_l12"
   },
   {
-    "id": 1046,
+    "id": 1048,
     "ru": "Обонятельный треугольник",
     "la": "trigonum olfactorium",
     "cat": "neuro_l12"
   },
   {
-    "id": 1047,
+    "id": 1049,
     "ru": "Переднее продырявленное вещество",
     "la": "substantia perforata anterior",
     "cat": "neuro_l12"
   },
   {
-    "id": 1048,
+    "id": 1050,
     "ru": "Парагиппокампальная извилина",
     "la": "gyrus parahippocampalis",
     "cat": "neuro_l12"
   },
   {
-    "id": 1049,
+    "id": 1051,
     "ru": "Сводчатая извилина",
     "la": "gyrus fornicatus",
     "cat": "neuro_l12"
   },
   {
-    "id": 1050,
+    "id": 1052,
     "ru": "Крючок",
     "la": "uncus",
     "cat": "neuro_l12"
   },
   {
-    "id": 1051,
+    "id": 1053,
     "ru": "Решетчатые отверстия",
     "la": "foramina cribrosa ossis ethmoidalis",
     "cat": "neuro_l12"
   },
   {
-    "id": 1052,
+    "id": 1054,
     "ru": "Решетчатая пластинка решетчатой кости",
     "la": "lamina cribrosa ossis ethmoidalis",
     "cat": "neuro_l12"
   },
   {
-    "id": 1053,
+    "id": 1055,
     "ru": "Верхний носовой ход",
     "la": "meatus nasi superior",
     "cat": "neuro_l12"
   },
   {
-    "id": 1054,
+    "id": 1056,
     "ru": "Обонятельная область полости носа",
     "la": "regio olfactoria cavitatis nasi",
     "cat": "neuro_l12"
   },
   {
-    "id": 1055,
+    "id": 1057,
     "ru": "Глазодвигательный нерв",
     "la": "nervus oculomotorius",
     "cat": "neuro_l12"
   },
   {
-    "id": 1056,
+    "id": 1058,
     "ru": "Глазодвигательная борозда",
     "la": "sulcus oculomotorius",
     "cat": "neuro_l12"
   },
   {
-    "id": 1057,
+    "id": 1059,
     "ru": "Верхняя глазничная щель",
     "la": "fissura orbitalis superior",
     "cat": "neuro_l12"
   },
   {
-    "id": 1058,
+    "id": 1060,
     "ru": "Блоковый нерв",
     "la": "nervus trochlearis",
     "cat": "neuro_l12"
   },
   {
-    "id": 1059,
+    "id": 1061,
     "ru": "Добавочное ядро глазодвигательного нерва",
     "la": "nucleus accessorius nervi oculomotorii",
     "cat": "neuro_l12"
   },
   {
-    "id": 1060,
+    "id": 1062,
     "ru": "Двигательное ядро глазодвигательного нерва",
     "la": "nucleus nervi oculomotorii",
     "cat": "neuro_l12"
   },
   {
-    "id": 1061,
+    "id": 1063,
     "ru": "Двигательное ядро блокового нерва",
     "la": "nucleus nervi trochlearis",
     "cat": "neuro_l12"
   },
   {
-    "id": 1062,
+    "id": 1064,
     "ru": "Глазница",
     "la": "orbita",
     "cat": "neuro_l12"
   },
   {
-    "id": 1063,
+    "id": 1065,
     "ru": "Нижняя косая мышца глаза",
     "la": "musculus obliquus inferior bulbi",
     "cat": "neuro_l12"
   },
   {
-    "id": 1064,
+    "id": 1066,
     "ru": "Верхняя прямая мышца глаза",
     "la": "musculus rectus superior bulbi",
     "cat": "neuro_l12"
   },
   {
-    "id": 1065,
+    "id": 1067,
     "ru": "Нижняя прямая мышца глаза",
     "la": "musculus rectus inferior bulbi",
     "cat": "neuro_l12"
   },
   {
-    "id": 1066,
+    "id": 1068,
     "ru": "Латеральная прямая мышца глаза",
     "la": "musculus rectus lateralis bulbi",
     "cat": "neuro_l12"
   },
   {
-    "id": 1067,
+    "id": 1069,
     "ru": "Тройничный нерв",
     "la": "nervus trigeminus",
     "cat": "neuro_l13"
   },
   {
-    "id": 1068,
+    "id": 1070,
     "ru": "Среднемозговое ядро тройничного нерва",
     "la": "nucleus mesencephalicus nervi trigemini",
     "cat": "neuro_l13"
   },
   {
-    "id": 1069,
+    "id": 1071,
     "ru": "Мостовое ядро тройничного нерва",
     "la": "nucleus pontinus nervi trigemini",
     "cat": "neuro_l13"
   },
   {
-    "id": 1070,
+    "id": 1072,
     "ru": "Спинномозговое ядро тройничного нерва",
     "la": "nucleus spinalis nervi trigemini",
     "cat": "neuro_l13"
   },
   {
-    "id": 1071,
+    "id": 1073,
     "ru": "Вдавление тройничного нерва пирамиды височной кости",
     "la": "impressio trigeminalis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1072,
+    "id": 1074,
     "ru": "Верхняя глазничная щель клиновидной кости",
     "la": "fissura orbitalis superior ossis sphenoidalis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1073,
+    "id": 1075,
     "ru": "Круглое отверстие клиновидной кости",
     "la": "foramen rotundum",
     "cat": "neuro_l13"
   },
   {
-    "id": 1074,
+    "id": 1076,
     "ru": "Овальное отверстие клиновидной кости",
     "la": "foramen ovale",
     "cat": "neuro_l13"
   },
   {
-    "id": 1075,
+    "id": 1077,
     "ru": "Глазной нерв",
     "la": "nervus ophthalmicus",
     "cat": "neuro_l13"
   },
   {
-    "id": 1076,
+    "id": 1078,
     "ru": "Лобный нерв",
     "la": "nervus frontalis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1077,
+    "id": 1079,
     "ru": "Носоресничный нерв",
     "la": "nervus nasociliaris",
     "cat": "neuro_l13"
   },
   {
-    "id": 1078,
+    "id": 1080,
     "ru": "Слезный нерв",
     "la": "nervus lacrimalis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1079,
+    "id": 1081,
     "ru": "Надглазничный нерв",
     "la": "nervus supraorbitalis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1080,
+    "id": 1082,
     "ru": "Верхнечелюстной нерв",
     "la": "nervus maxillaris",
     "cat": "neuro_l13"
   },
   {
-    "id": 1081,
+    "id": 1083,
     "ru": "Подглазничный нерв",
     "la": "nervus infraorbitalis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1082,
+    "id": 1084,
     "ru": "Скуловой нерв",
     "la": "nervus zygomaticus",
     "cat": "neuro_l13"
   },
   {
-    "id": 1083,
+    "id": 1085,
     "ru": "Малая гусиная лапка",
     "la": "pes anserinus minor",
     "cat": "neuro_l13"
   },
   {
-    "id": 1084,
+    "id": 1086,
     "ru": "Наружные носовые нервы",
     "la": "rami nasales externi",
     "cat": "neuro_l13"
   },
   {
-    "id": 1085,
+    "id": 1087,
     "ru": "Внутренние носовые нервы",
     "la": "rami nasales interni",
     "cat": "neuro_l13"
   },
   {
-    "id": 1086,
+    "id": 1088,
     "ru": "Скулолицевой нерв",
     "la": "ramus zygomaticofacialis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1087,
+    "id": 1089,
     "ru": "Нижнеальвеолярный нерв",
     "la": "nervus alveolaris inferior",
     "cat": "neuro_l13"
   },
   {
-    "id": 1088,
+    "id": 1090,
     "ru": "Язычный нерв",
     "la": "nervus lingualis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1089,
+    "id": 1091,
     "ru": "Щечный нерв нижнечелюстного нерва",
     "la": "nervus buccalis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1090,
+    "id": 1092,
     "ru": "Ушно-височный нерв",
     "la": "nervus auriculotemporalis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1091,
+    "id": 1093,
     "ru": "Отводящий нерв",
     "la": "nervus abducens",
     "cat": "neuro_l13"
   },
   {
-    "id": 1092,
+    "id": 1094,
     "ru": "Ядро отводящего нерва",
     "la": "nucleus nervi abducentis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1093,
+    "id": 1095,
     "ru": "Расщелина большого каменистого нерва височной кости",
     "la": "hiatus canalis nervi petrosi majoris",
     "cat": "neuro_l13"
   },
   {
-    "id": 1094,
+    "id": 1096,
     "ru": "Борозда большого каменистого нерва височной кости",
     "la": "sulcus nervi petrosi majoris",
     "cat": "neuro_l13"
   },
   {
-    "id": 1095,
+    "id": 1097,
     "ru": "Лицевой нерв",
     "la": "nervus facialis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1096,
+    "id": 1098,
     "ru": "Двигательное ядро лицевого нерва",
     "la": "nucleus motorius nervi facialis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1097,
+    "id": 1099,
     "ru": "Верхнее слюноотделительное ядро лицевого нерва",
     "la": "nucleus salivatorius superior",
     "cat": "neuro_l13"
   },
   {
-    "id": 1098,
+    "id": 1100,
     "ru": "Ядро одиночного пути",
     "la": "nucleus tractus solitarii",
     "cat": "neuro_l13"
   },
   {
-    "id": 1099,
+    "id": 1101,
     "ru": "Шилососцевидное отверстие",
     "la": "foramen stylomastoideum",
     "cat": "neuro_l13"
   },
   {
-    "id": 1100,
+    "id": 1102,
     "ru": "Большая гусиная лапка",
     "la": "pes anserinus major",
     "cat": "neuro_l13"
   },
   {
-    "id": 1101,
+    "id": 1103,
     "ru": "Скулоглазничное отверстие",
     "la": "foramen zygomaticoorbitale",
     "cat": "neuro_l13"
   },
   {
-    "id": 1102,
+    "id": 1104,
     "ru": "Щечная ветвь лицевого нерва",
     "la": "rami buccales nervi facialis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1103,
+    "id": 1105,
     "ru": "Краевая ветвь нижней челюсти",
     "la": "ramus marginalis mandibulae",
     "cat": "neuro_l13"
   },
   {
-    "id": 1104,
+    "id": 1106,
     "ru": "Шейная ветвь лицевого нерва",
     "la": "ramus colli nervi facialis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1105,
+    "id": 1107,
     "ru": "Поверхностная шейная петля",
     "la": "ansa cervicalis superficialis",
     "cat": "neuro_l13"
   },
   {
-    "id": 1106,
+    "id": 1108,
     "ru": "Языкоглоточный нерв",
     "la": "nervus glossopharyngeus",
     "cat": "neuro_l14"
   },
   {
-    "id": 1107,
+    "id": 1109,
     "ru": "Блуждающий нерв",
     "la": "nervus vagus",
     "cat": "neuro_l14"
   },
   {
-    "id": 1108,
+    "id": 1110,
     "ru": "Двойное ядро",
     "la": "nucleus ambiguus",
     "cat": "neuro_l14"
   },
   {
-    "id": 1109,
+    "id": 1111,
     "ru": "Нижнее слюноотделительное ядро",
     "la": "nucleus salivatorius inferior",
     "cat": "neuro_l14"
   },
   {
-    "id": 1110,
+    "id": 1112,
     "ru": "Заднее ядро блуждающего нерва",
     "la": "nucleus dorsalis nervi vagi",
     "cat": "neuro_l14"
   },
   {
-    "id": 1111,
+    "id": 1113,
     "ru": "Добавочный нерв",
     "la": "nervus accessorius",
     "cat": "neuro_l14"
   },
   {
-    "id": 1112,
+    "id": 1114,
     "ru": "Ядро добавочного нерва",
     "la": "nucleus nervi accessorii",
     "cat": "neuro_l14"
   },
   {
-    "id": 1113,
+    "id": 1115,
     "ru": "Подъязычный нерв",
     "la": "nervus hypoglossus",
     "cat": "neuro_l14"
   },
   {
-    "id": 1114,
+    "id": 1116,
     "ru": "Ядро подъязычного нерва",
     "la": "nucleus nervi hypoglossi",
     "cat": "neuro_l14"
   },
   {
-    "id": 1115,
+    "id": 1117,
     "ru": "Треугольник подъязычного нерва",
     "la": "trigonum nervi hypoglossi",
     "cat": "neuro_l14"
   },
   {
-    "id": 1116,
+    "id": 1118,
     "ru": "Яремное отверстие",
     "la": "foramen jugulare",
     "cat": "neuro_l14"
   },
   {
-    "id": 1117,
+    "id": 1119,
     "ru": "Каменистая ямочка",
     "la": "fossula petrosa",
     "cat": "neuro_l14"
   },
   {
-    "id": 1118,
+    "id": 1120,
     "ru": "Расщелина малого каменистого нерва",
     "la": "hiatus canalis nervi petrosi minoris",
     "cat": "neuro_l14"
   },
   {
-    "id": 1119,
+    "id": 1121,
     "ru": "Передняя поверхность пирамиды височной кости",
     "la": "facies anterior partis petrosae ossis temporalis",
     "cat": "neuro_l14"
   },
   {
-    "id": 1120,
+    "id": 1122,
     "ru": "Барабанно-сосцевидная щель",
     "la": "fissura tympanomastoidea",
     "cat": "neuro_l14"
   },
   {
-    "id": 1121,
+    "id": 1123,
     "ru": "Сосцевидный каналец височной кости",
     "la": "canaliculus mastoideus",
     "cat": "neuro_l14"
   },
   {
-    "id": 1122,
+    "id": 1124,
     "ru": "Бифуркация общей сонной артерии",
     "la": "bifurcatio carotidis",
     "cat": "neuro_l14"
   },
   {
-    "id": 1123,
+    "id": 1125,
     "ru": "Возвратный гортанный нерв",
     "la": "nervus laryngeus recurrens",
     "cat": "neuro_l14"
   },
   {
-    "id": 1124,
+    "id": 1126,
     "ru": "Грудино-ключично-сосцевидная мышца",
     "la": "musculus sternocleidomastoideus",
     "cat": "neuro_l14"
   },
   {
-    "id": 1125,
+    "id": 1127,
     "ru": "Трапециевидная мышца",
     "la": "musculus trapezius",
     "cat": "neuro_l14"
   },
   {
-    "id": 1126,
+    "id": 1128,
     "ru": "Задняя латеральная борозда продолговатого мозга",
     "la": "sulcus posterolateralis medullae oblongatae",
     "cat": "neuro_l14"
   },
   {
-    "id": 1127,
+    "id": 1129,
     "ru": "Поднижнечелюстной треугольник",
     "la": "trigonum submandibulare",
     "cat": "neuro_l14"
   },
   {
-    "id": 1128,
+    "id": 1130,
     "ru": "Язычный треугольник",
     "la": "trigonum linguale",
     "cat": "neuro_l14"
   },
   {
-    "id": 1129,
+    "id": 1131,
     "ru": "Роговица",
     "la": "cornea",
     "cat": "neuro_l15"
   },
   {
-    "id": 1130,
+    "id": 1132,
     "ru": "Склера",
     "la": "sclera",
     "cat": "neuro_l15"
   },
   {
-    "id": 1131,
+    "id": 1133,
     "ru": "Собственная сосудистая оболочка",
     "la": "choroidea",
     "cat": "neuro_l15"
   },
   {
-    "id": 1132,
+    "id": 1134,
     "ru": "Ресничное тело",
     "la": "corpus ciliare",
     "cat": "neuro_l15"
   },
   {
-    "id": 1133,
+    "id": 1135,
     "ru": "Радужка",
     "la": "iris",
     "cat": "neuro_l15"
   },
   {
-    "id": 1134,
+    "id": 1136,
     "ru": "Хрусталик",
     "la": "lens",
     "cat": "neuro_l15"
   },
   {
-    "id": 1135,
+    "id": 1137,
     "ru": "Передняя камера глаза",
     "la": "camera anterior bulbi",
     "cat": "neuro_l15"
   },
   {
-    "id": 1136,
+    "id": 1138,
     "ru": "Задняя камера глаза",
     "la": "camera posterior bulbi",
     "cat": "neuro_l15"
   },
   {
-    "id": 1137,
+    "id": 1139,
     "ru": "Стекловидное тело",
     "la": "corpus vitreum",
     "cat": "neuro_l15"
   },
   {
-    "id": 1138,
+    "id": 1140,
     "ru": "Верхняя косая мышца глазного яблока",
     "la": "musculus obliquus superior bulbi",
     "cat": "neuro_l15"
   },
   {
-    "id": 1139,
+    "id": 1141,
     "ru": "Нижняя косая мышца глазного яблока",
     "la": "musculus obliquus inferior bulbi",
     "cat": "neuro_l15"
   },
   {
-    "id": 1140,
+    "id": 1142,
     "ru": "Боковая прямая мышца глазного яблока",
     "la": "musculus rectus lateralis bulbi",
     "cat": "neuro_l15"
   },
   {
-    "id": 1141,
+    "id": 1143,
     "ru": "Внутренняя прямая мышца глазного яблока",
     "la": "musculus rectus medialis bulbi",
     "cat": "neuro_l15"
   },
   {
-    "id": 1142,
+    "id": 1144,
     "ru": "Нижняя прямая мышца глазного яблока",
     "la": "musculus rectus inferior bulbi",
     "cat": "neuro_l15"
   },
   {
-    "id": 1143,
+    "id": 1145,
     "ru": "Верхняя прямая мышца глазного яблока",
     "la": "musculus rectus superior bulbi",
     "cat": "neuro_l15"
   },
   {
-    "id": 1144,
+    "id": 1146,
     "ru": "Передний полюс глазного яблока",
     "la": "polus anterior bulbi oculi",
     "cat": "neuro_l15"
   },
   {
-    "id": 1145,
+    "id": 1147,
     "ru": "Задний полюс глазного яблока",
     "la": "polus posterior bulbi oculi",
     "cat": "neuro_l15"
   },
   {
-    "id": 1146,
+    "id": 1148,
     "ru": "Веко верхнее",
     "la": "palpebra superior",
     "cat": "neuro_l15"
   },
   {
-    "id": 1147,
+    "id": 1149,
     "ru": "Веко нижнее",
     "la": "palpebra inferior",
     "cat": "neuro_l15"
   },
   {
-    "id": 1148,
+    "id": 1150,
     "ru": "Конъюнктива",
     "la": "tunica conjunctiva",
     "cat": "neuro_l15"
   },
   {
-    "id": 1149,
+    "id": 1151,
     "ru": "Носослезный канал",
     "la": "canalis nasolacrimalis",
     "cat": "neuro_l15"
   },
   {
-    "id": 1150,
+    "id": 1152,
     "ru": "Зрительный нерв",
     "la": "nervus opticus",
     "cat": "neuro_l15"
   },
   {
-    "id": 1151,
+    "id": 1153,
     "ru": "Зрительный тракт",
     "la": "tractus opticus",
     "cat": "neuro_l15"
   },
   {
-    "id": 1152,
+    "id": 1154,
     "ru": "Зрительный перекрест",
     "la": "chiasma opticum",
     "cat": "neuro_l15"
   },
   {
-    "id": 1153,
+    "id": 1155,
     "ru": "Слепое пятно",
     "la": "discus nervi optici",
     "cat": "neuro_l15"
   },
   {
-    "id": 1154,
+    "id": 1156,
     "ru": "Центральная ямка сетчатки",
     "la": "fovea centralis retinae",
     "cat": "neuro_l15"
   },
   {
-    "id": 1155,
+    "id": 1157,
     "ru": "Ядро глазного яблока",
     "la": "nucleus bulbi oculi",
     "cat": "neuro_l15"
   },
   {
-    "id": 1156,
+    "id": 1158,
     "ru": "Слепая часть сетчатки",
     "la": "pars caeca retinae",
     "cat": "neuro_l15"
   },
   {
-    "id": 1157,
+    "id": 1159,
     "ru": "Зрительная часть сетчатки",
     "la": "pars optica retinae",
     "cat": "neuro_l15"
   },
   {
-    "id": 1158,
+    "id": 1160,
     "ru": "Ресничный поясок",
     "la": "zonula ciliaris",
     "cat": "neuro_l15"
   },
   {
-    "id": 1159,
+    "id": 1161,
     "ru": "Мышца, поднимающая верхнее веко",
     "la": "musculus levator palpebrae superioris",
     "cat": "neuro_l15"
   },
   {
-    "id": 1160,
+    "id": 1162,
     "ru": "Зрительный канал",
     "la": "canalis opticus",
     "cat": "neuro_l15"
   },
   {
-    "id": 1161,
+    "id": 1163,
     "ru": "Зрачок",
     "la": "pupilla",
     "cat": "neuro_l15"
   },
   {
-    "id": 1162,
+    "id": 1164,
     "ru": "Передний полюс хрусталика",
     "la": "polus anterior lentis",
     "cat": "neuro_l15"
   },
   {
-    "id": 1163,
+    "id": 1165,
     "ru": "Задний полюс хрусталика",
     "la": "polus posterior lentis",
     "cat": "neuro_l15"
   },
   {
-    "id": 1164,
+    "id": 1166,
     "ru": "Ушная раковина",
     "la": "auricula",
     "cat": "neuro_l16"
   },
   {
-    "id": 1165,
+    "id": 1167,
     "ru": "Наружный слуховой проход",
     "la": "meatus acusticus externus",
     "cat": "neuro_l16"
   },
   {
-    "id": 1166,
+    "id": 1168,
     "ru": "Ладья",
     "la": "scapha",
     "cat": "neuro_l16"
   },
   {
-    "id": 1167,
+    "id": 1169,
     "ru": "Завиток",
     "la": "helix",
     "cat": "neuro_l16"
   },
   {
-    "id": 1168,
+    "id": 1170,
     "ru": "Противозавиток",
     "la": "antihelix",
     "cat": "neuro_l16"
   },
   {
-    "id": 1169,
+    "id": 1171,
     "ru": "Ножка противозавитка",
     "la": "crus antihelicis",
     "cat": "neuro_l16"
   },
   {
-    "id": 1170,
+    "id": 1172,
     "ru": "Треугольная ямка",
     "la": "fossa triangularis auriculae",
     "cat": "neuro_l16"
   },
   {
-    "id": 1171,
+    "id": 1173,
     "ru": "Козелок",
     "la": "tragus",
     "cat": "neuro_l16"
   },
   {
-    "id": 1172,
+    "id": 1174,
     "ru": "Противокозелок",
     "la": "antitragus",
     "cat": "neuro_l16"
   },
   {
-    "id": 1173,
+    "id": 1175,
     "ru": "Мочка",
     "la": "lobulus auriculae",
     "cat": "neuro_l16"
   },
   {
-    "id": 1174,
+    "id": 1176,
     "ru": "Молоточек",
     "la": "malleus",
     "cat": "neuro_l16"
   },
   {
-    "id": 1175,
+    "id": 1177,
     "ru": "Головка молоточка",
     "la": "caput mallei",
     "cat": "neuro_l16"
   },
   {
-    "id": 1176,
+    "id": 1178,
     "ru": "Рукоятка молоточка",
     "la": "manubrium mallei",
     "cat": "neuro_l16"
   },
   {
-    "id": 1177,
+    "id": 1179,
     "ru": "Наковальня",
     "la": "incus",
     "cat": "neuro_l16"
   },
   {
-    "id": 1178,
+    "id": 1180,
     "ru": "Короткая ножка наковальни",
     "la": "crus breve incudis",
     "cat": "neuro_l16"
   },
   {
-    "id": 1179,
+    "id": 1181,
     "ru": "Длинная ножка наковальни",
     "la": "crus longum incudis",
     "cat": "neuro_l16"
   },
   {
-    "id": 1180,
+    "id": 1182,
     "ru": "Стремя",
     "la": "stapes",
     "cat": "neuro_l16"
   },
   {
-    "id": 1181,
+    "id": 1183,
     "ru": "Головка стремени",
     "la": "caput stapedis",
     "cat": "neuro_l16"
   },
   {
-    "id": 1182,
+    "id": 1184,
     "ru": "Передняя ножка стремени",
     "la": "crus anterius stapedis",
     "cat": "neuro_l16"
   },
   {
-    "id": 1183,
+    "id": 1185,
     "ru": "Задняя ножка стремени",
     "la": "crus posterius stapedis",
     "cat": "neuro_l16"
   },
   {
-    "id": 1184,
+    "id": 1186,
     "ru": "Основание стремени",
     "la": "basis stapedis",
     "cat": "neuro_l16"
   },
   {
-    "id": 1185,
+    "id": 1187,
     "ru": "Барабанная полость",
     "la": "cavitas tympani",
     "cat": "neuro_l16"
   },
   {
-    "id": 1186,
+    "id": 1188,
     "ru": "Барабанная перепонка",
     "la": "membrana tympanica",
     "cat": "neuro_l16"
   },
   {
-    "id": 1187,
+    "id": 1189,
     "ru": "Слуховая труба",
     "la": "tuba auditiva",
     "cat": "neuro_l16"
   },
   {
-    "id": 1188,
+    "id": 1190,
     "ru": "Глоточное отверстие слуховой трубы",
     "la": "ostium pharyngeum tubae auditivae",
     "cat": "neuro_l16"
   },
   {
-    "id": 1189,
+    "id": 1191,
     "ru": "Внутренний слуховой проход",
     "la": "meatus acusticus internus",
     "cat": "neuro_l16"
   },
   {
-    "id": 1190,
+    "id": 1192,
     "ru": "Костный лабиринт внутреннего уха",
     "la": "labyrinthus osseus",
     "cat": "neuro_l16"
   },
   {
-    "id": 1191,
+    "id": 1193,
     "ru": "Перепончатый лабиринт внутреннего уха",
     "la": "labyrinthus membranaceus",
     "cat": "neuro_l16"
   },
   {
-    "id": 1192,
+    "id": 1194,
     "ru": "Передний полукружный канал",
     "la": "canalis semicircularis anterior",
     "cat": "neuro_l16"
   },
   {
-    "id": 1193,
+    "id": 1195,
     "ru": "Задний полукружный канал",
     "la": "canalis semicircularis posterior",
     "cat": "neuro_l16"
   },
   {
-    "id": 1194,
+    "id": 1196,
     "ru": "Латеральный полукружный канал",
     "la": "canalis semicircularis lateralis",
     "cat": "neuro_l16"
   },
   {
-    "id": 1195,
+    "id": 1197,
     "ru": "Сферический мешочек",
     "la": "sacculus",
     "cat": "neuro_l16"
   },
   {
-    "id": 1196,
+    "id": 1198,
     "ru": "Эллиптический мешочек",
     "la": "utriculus",
     "cat": "neuro_l16"
   },
   {
-    "id": 1197,
+    "id": 1199,
     "ru": "Преддверье",
     "la": "vestibulum",
     "cat": "neuro_l16"
   },
   {
-    "id": 1198,
+    "id": 1200,
     "ru": "Базилярная пластинка",
     "la": "lamina basilaris",
     "cat": "neuro_l16"
   },
   {
-    "id": 1199,
+    "id": 1201,
     "ru": "Кортиев орган",
     "la": "organum spirale",
     "cat": "neuro_l16"
   },
   {
-    "id": 1200,
+    "id": 1202,
     "ru": "Лестница преддверия",
     "la": "scala vestibuli",
     "cat": "neuro_l16"
   },
   {
-    "id": 1201,
+    "id": 1203,
     "ru": "Барабанная лестница",
     "la": "scala tympani",
     "cat": "neuro_l16"
   },
   {
-    "id": 1202,
+    "id": 1204,
     "ru": "Улитка",
     "la": "cochlea",
     "cat": "neuro_l16"
   },
   {
-    "id": 1203,
+    "id": 1205,
     "ru": "Преддверно-улитковый нерв",
     "la": "nervus vestibulocochlearis",
     "cat": "neuro_l16"
   },
   {
-    "id": 1204,
+    "id": 1206,
     "ru": "Язык",
     "la": "lingua",
     "cat": "neuro_l17"
   },
   {
-    "id": 1205,
+    "id": 1207,
     "ru": "Листовидные сосочки",
     "la": "papillae foliatae",
     "cat": "neuro_l17"
   },
   {
-    "id": 1206,
+    "id": 1208,
     "ru": "Нитевидные сосочки",
     "la": "papillae filiformes",
     "cat": "neuro_l17"
   },
   {
-    "id": 1207,
+    "id": 1209,
     "ru": "Грибовидные сосочки",
     "la": "papillae fungiformes",
     "cat": "neuro_l17"
   },
   {
-    "id": 1208,
+    "id": 1210,
     "ru": "Желобоватые сосочки",
     "la": "papillae vallatae",
     "cat": "neuro_l17"
   },
   {
-    "id": 1209,
+    "id": 1211,
     "ru": "Слепое отверстие",
     "la": "foramen caecum linguae",
     "cat": "neuro_l17"
   },
   {
-    "id": 1210,
+    "id": 1212,
     "ru": "Верхушка языка",
     "la": "apex linguae",
     "cat": "neuro_l17"
   },
   {
-    "id": 1211,
+    "id": 1213,
     "ru": "Тело языка",
     "la": "corpus linguae",
     "cat": "neuro_l17"
   },
   {
-    "id": 1212,
+    "id": 1214,
     "ru": "Спинка языка",
     "la": "dorsum linguae",
     "cat": "neuro_l17"
   },
   {
-    "id": 1213,
+    "id": 1215,
     "ru": "Лицевой нерв",
     "la": "nervus facialis",
     "cat": "neuro_l17"
   },
   {
-    "id": 1214,
+    "id": 1216,
     "ru": "Языкоглоточный нерв",
     "la": "nervus glossopharyngeus",
     "cat": "neuro_l17"
   },
   {
-    "id": 1215,
+    "id": 1217,
     "ru": "Блуждающий нерв",
     "la": "nervus vagus",
     "cat": "neuro_l17"
   },
   {
-    "id": 1216,
+    "id": 1218,
     "ru": "Нижняя продольная мышца языка",
     "la": "musculus longitudinalis inferior",
     "cat": "neuro_l17"
   },
   {
-    "id": 1217,
+    "id": 1219,
     "ru": "Поперечная мышца языка",
     "la": "musculus transversus linguae",
     "cat": "neuro_l17"
   },
   {
-    "id": 1218,
+    "id": 1220,
     "ru": "Вертикальная мышца языка",
     "la": "musculus verticalis linguae",
     "cat": "neuro_l17"
   },
   {
-    "id": 1219,
+    "id": 1221,
     "ru": "Верхняя носовая раковина",
     "la": "concha nasalis superior",
     "cat": "neuro_l17"
   },
   {
-    "id": 1220,
+    "id": 1222,
     "ru": "Средняя носовая раковина",
     "la": "concha nasalis media",
     "cat": "neuro_l17"
   },
   {
-    "id": 1221,
+    "id": 1223,
     "ru": "Перегородка носа",
     "la": "septum nasi",
     "cat": "neuro_l17"
   },
   {
-    "id": 1222,
+    "id": 1224,
     "ru": "Гиппокамп",
     "la": "hippocampus",
     "cat": "neuro_l17"
   },
   {
-    "id": 1223,
+    "id": 1225,
     "ru": "Сосцевидные тела",
     "la": "corpora mamillaria",
     "cat": "neuro_l17"
   },
   {
-    "id": 1224,
+    "id": 1226,
     "ru": "Обонятельный нерв",
     "la": "nervus olfactorius",
     "cat": "neuro_l17"
   },
   {
-    "id": 1225,
+    "id": 1227,
     "ru": "Ядро одиночного пути",
     "la": "nucleus tractus solitarii",
     "cat": "neuro_l17"
   },
   {
-    "id": 1226,
+    "id": 1228,
     "ru": "Кожа",
     "la": "cutis",
     "cat": "neuro_l18"
   },
   {
-    "id": 1227,
+    "id": 1229,
     "ru": "Волосы",
     "la": "pili",
     "cat": "neuro_l18"
   },
   {
-    "id": 1228,
+    "id": 1230,
     "ru": "Ноготь",
     "la": "unguis",
     "cat": "neuro_l18"
   },
   {
-    "id": 1229,
+    "id": 1231,
     "ru": "Брови",
     "la": "supercilia",
     "cat": "neuro_l18"
   },
   {
-    "id": 1230,
+    "id": 1232,
     "ru": "Сальная железа",
     "la": "glandula sebacea",
     "cat": "neuro_l18"
   },
   {
-    "id": 1231,
+    "id": 1233,
     "ru": "Потовая железа",
     "la": "glandula sudorifera",
     "cat": "neuro_l18"
